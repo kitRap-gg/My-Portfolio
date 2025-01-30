@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'poppins', sans-serif;
+}
+
+:root {
+    --bg--color: #1f242d;
+    --second--bg--color: #323946;
+    --text--color: #fff;
+    --main--color: #0ef;
+}
+
+html {
+    font-size: 63%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg--color);
+    color: var(--text--color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.header {
+    position: fixed;
+    background:var(--bg--color);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--text--color);
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text--color);
+    margin-left: 4rem;
+    transition: .7s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main--color);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text--color);
+    display: none;
+}
+
+
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.home-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.home-content h3:nth-of-type(2){
+    margin-bottom: 2rem;
+}
+
+span {
+    color: var(--main--color);
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-content p {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+}
+
+.home-img img {
+    width: 35vw;
+    border-radius: 3rem;
+    margin-left: 20rem;
+}
+
+/* .social-media {
+    position: relative;
+    top:30rem;
+    right: 22rem;;
+    display: flex;
+    
+} */
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: 2rem solid var(--main--color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--bg--color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .4s ease;
+}
+
+ .social-media a:hover{
+    background-color: rgb(225, 250, 215);
+    color: rgb(243, 239, 233);
+    box-shadow: 0 0 1 rem burlywood;
+}
+
+ .btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main--color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main--color);
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    transition: .5s;
+}
+
+.btn:hover {
+   box-shadow: none;
+   
+} 
+.about{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    gap: 2rem;
+    background: var(--second--bg--color);
+    padding-top: 7.2rem;
+}
+
+.about img{
+    width: 39vw;
+    border-radius: 50%;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+ .about-content h2{
+    text-align: left;
+   line-height: 1.2 ;
+ }
+
+ .about-content h3{
+    font-size: 2.6rem;
+ }
+
+ .about-content p{
+    font-size: 1.6rem;
+    margin: 2rem 0rem 3rem;
+}
+
+.services-heading{
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 3rem;
+     padding-top: 2rem;
+    
+}
+
+.services-content{
+    /* padding:0 2rem 0 2rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    
+}
+.services-content .web{
+    flex:1 1 30rem ;
+    background-color:var(--second--bg--color);
+    border: 0.2rem solid var(--bg--color);
+    border-radius: 2rem;
+    padding: 0 8rem 4rem 8rem;
+    text-align: center;
+    font-size: 2rem;
+    transition: .3s ease;
+}
+
+.services-content .web:hover{
+border-color: #0ef;
+transform: scale(1.02);
+}
+
+.web i{
+   font-size: 6rem;
+   color: var(--main--color);
+   padding:2rem 0 2rem 0rem;
+
+}
+.web i:hover{
+    color: rgb(6, 110, 117);
+}
+
+.web h1{
+    padding-bottom: 2rem;
+    margin: 1rem 0 3rem;
+}
+
+.web p{
+    /* padding-bottom: 2rem; */
+    margin: 1rem 0 3rem;
+   
+}
+
+
+
+  
+/* Add or modify the following styles in your existing CSS */
+.heading{
+    padding-bottom: 4rem;
+}
+.portfolio-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfolio-box {
+    position: relative;
+    width: 45%;
+    margin-bottom: 4rem;
+    overflow: hidden;
+    border-radius: 1rem; /* Add border-radius for rounded corners */
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.portfolio-box img {
+    width: 100%;
+    max-height: 200px; /* Adjust the maximum height as needed */
+    object-fit: cover;
+    border-radius: 1rem; /* Maintain rounded corners */
+    transition: transform 0.3s ease-in-out;
+}
+/* FOR MAKING PORTFOLIO BOX GLOW   */
+.portfolio-box .portfolio-layer{
+    position: absolute;
+    bottom: 9;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.1),var(--main--color));
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.portfolio-box:hover .portfolio-layer{
+    transform: translateY(0);
+}
+
+.portfolio-box:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-layer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: #fff; /* Set text color to white */
+}
+
+.portfolio-box:hover .portfolio-layer {
+    opacity: 1;
+    transform: translateY(3);
+    
+}
+
+.portfolio-layer h2,
+.portfolio-layer p,
+.portfolio-layer a {
+    margin: 0;
+}
+
+.portfolio-layer h2 {
+    font-size: 2.5rem; /* Adjust font size */
+    margin-bottom: 0.5rem;
+    /*background-color: #163c4a;*/
+    color: #c6d5ec; /* Set heading color to white */
+}
+
+.portfolio-layer p {
+    font-size: 1.7rem; /* Adjust font size */
+     /*background-color: #18a3c5;*/
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.portfolio-layer a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--main--color);
+    border-radius: 0.3rem;
+    text-decoration: none;
+    font-size: 1.8rem; /* Adjust font size */
+}
+
+
+
+.Contact h2{
+    margin-bottom: 3rem;
+}
+
+.Contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.Contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Contact form .input-box input,
+.Contact form  textarea{
+
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text--color);
+    background-color: var(--second--bg--color);
+    border-radius: 1rem;
+    margin: 0.7rem 0;
+}
+
+.Contact form .input-box input{
+    width: 49%;
+}
+
+.Contact form .btn{
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--second--bg--color);
+}
+
+.footer-text p{
+    font-size: 1.6rem;
+}
+
+
+/* break points*/ 
+@media (max-width: 1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width:991px){
+    .header{
+        padding:  2rem 3%;
+    }
+    section {
+        padding: 10rem 3% 2rem;
+    }
+    .footer {
+        padding: 2 rem 3%;
+    }
+}
+
+@media(max-width:991px){
+    #menu-icon{
+        display: block;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg--color);
+        border-color: .1rem solid rgba(0,0,0,.2);
+        box-shadow: 0  .5rem 1rem rgba(0,0,0,.2);
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2 rem;
+        margin: 3rem 0;
+    }
+}
