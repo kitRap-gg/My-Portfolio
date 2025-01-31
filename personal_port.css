@@ -407,7 +407,7 @@ transform: scale(1.02);
     }
 }
 
-/*@media(max-width:991px){
+@media(max-width:991px){
     #menu-icon{
         display: block;
     }
@@ -466,5 +466,9 @@ transform: scale(1.02);
         background: var(--bg--color);
         border-top: .1rem soild rgba(0,0,0,.2);
         box-shadow: 0  .5rem 1rem rgba(0,0,0,.2);
+        display: none;
     }
-}            */
+    .navbar .active{
+display: block;
+    }
+}            
