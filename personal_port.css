@@ -424,7 +424,7 @@ transform: scale(1.02);
     }
 
     .navbar a {
-        display: block;
+        display: absolute;
         font-size: 2 rem;
         margin: 3rem 0;
     }
@@ -432,7 +432,7 @@ transform: scale(1.02);
 
 @media(max-width:768px){
     #menu-icon{
-        display: block;
+        display: absolute;
     }
     .navbar{
         position: absolute;
@@ -446,7 +446,7 @@ transform: scale(1.02);
     }
 
     .navbar a{
-        display: block;
+        display: absolute;
         font-size: 2rem;
         margin: 3rem 0;
     }
@@ -454,7 +454,7 @@ transform: scale(1.02);
 
 @media(max-width:769px){
     #menu-icon{
-        display: block;
+        display: absolute;
     }
 
     .navbar{
@@ -466,9 +466,26 @@ transform: scale(1.02);
         background: var(--bg--color);
         border-top: .1rem soild rgba(0,0,0,.2);
         box-shadow: 0  .5rem 1rem rgba(0,0,0,.2);
-        display: none;
+        
     }
     .navbar .active{
-display: block;
+display: absolute;
+    }
+
+    .home{
+        flex-direction: column;
+    }
+
+    .home-content h3{
+        font-size: 2.6rem;
+    }
+
+    .home-content h1{
+        font-size: 5rem;
+    }
+
+    .home-img{
+        width: 120vw;
+        margin-top: 4rem ;
     }
 }            
